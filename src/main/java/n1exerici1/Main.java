@@ -5,10 +5,13 @@ public class Main {
 
 
         Venda compra1 = new Venda ();
-        //compra1.addProducts(new Producte("pa",10));
-        //compra1.addProducts(new Producte("sindria",32));
+        compra1.addProducts(new Producte("pa",10));
+        compra1.addProducts(new Producte("sindria",32));
 
-        //System.out.println(compra1.totalCost());
+        System.out.println("La compra 1 te un cost de: " +compra1.totalCost()+" euros");
+
+        Venda compra2 = new Venda();
+        System.out.println("La compra 1 te un cost de: " + compra2.totalCost()+" euros");
 
 
 
