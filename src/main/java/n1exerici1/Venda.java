@@ -30,7 +30,7 @@ public class Venda {
 
         if (products.isEmpty()) {
 
-            throw new EmptySaleException();
+            throw new EmptySaleException("Per fer una compra primer has d'afegir productes");
 
         }else {
             for(i=0;i<products.size();i++) {
@@ -40,6 +40,15 @@ public class Venda {
 
 
         return totalPriceSales;
+    }
+    public void showProducte (int index) throws ArrayIndexOutOfBoundsException{
+
+        if (index >= 0 && index < products.size()) {
+            System.out.println(products.get(index));
+        } else {
+            throw new ArrayIndexOutOfBoundsException("Índice fuera del rango del array");
+        }
+
     }
 
 }
